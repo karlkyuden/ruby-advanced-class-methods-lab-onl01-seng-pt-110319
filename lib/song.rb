@@ -44,7 +44,8 @@ class Song
   def self.new_from_filename(songFile)
     data = songFile.split(" - ")
     artistName = data[0]
-    songTitle = data[1]
+    songTitle = data[1].delete_suffix('.mp3')
+    
     
     
   end
